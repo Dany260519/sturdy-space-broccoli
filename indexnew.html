@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <title>R-S-P Game</title>
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="./background.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>    
+    <audio id="click-sound" preload="auto">
+        <source src="./click.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="win-sound" preload="auto">
+        <source src="./win.mp3" type="audio/mp3">
+    </audio>
+    <audio id="tie-sound" preload="auto">
+        <source src="./tie.mp3" type="audio/mp3">
+    </audio>
+    <audio id="lose-sound" preload="auto">
+        <source src="./lose.mp3" type="audio/mp3">
+    </audio>
+
+
+    <div id="select-prefer">
+        <div>   
+            <h1 class="decorText">Select Your Game Mode</h1>
+            <button id="one_player" class="slect-buton-prefer" onclick="Start(1)">One Player</button>
+            <button id="multiplayer" class="slect-buton-prefer" onclick="Start(2)">Multiplayer</button>
+        </div>
+        <img src="./favicon.png" alt="Rock-scissors-paper!" id="main-img">
+    </div>
+
+    <div id="players" style="display: none;">
+        <div id="players-div">
+            <input type="text" id="player1" placeholder="Player 1" class="inputplayers">
+            <input type="text" id="player2" placeholder="Player 2" class="inputplayers">
+        </div>
+
+        <button type="button" id="game-button-start">Start</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <div id="results">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

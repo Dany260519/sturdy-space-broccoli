@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    background: fixed rgb(42, 42, 74);
+    color: aliceblue;
+}
+
+p span {
+    font-size: 13px;
+    position: relative;
+    bottom: 1px;
+    color: rgb(169, 188, 205);
+}
+
+button, .rsp_butn {
+    cursor: pointer;
+}
+
+#main-img {
+    width: 350px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.rsp_img {
+    width: 150px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d; /* Necesario para las transformaciones 3D en la imagen */
+}
+
+* {
+    font-family: "Potta One", system-ui;
+    box-sizing: border-box;
+}
+
+h2 span {
+    font-variant: small-caps;
+    background-color: rgb(68, 91, 135);
+    width: 100%;
+    height: 40px;
+    padding: 0 5px 5px 5px;
+}
+
+.pixel {
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#lose {
+    color: darkred;
+}
+
+#win {
+    color: rgb(91, 182, 91);
+}
+
+#tie {
+    color: rgb(67, 179, 194);
+}
+
+#select-prefer, #results, #players {
+    perspective: 1000px; /* Esto permite los efectos de 3D */
+}
+
+.slect-buton-prefer, #game-button-start, .butn-decor {
+    margin: 20px;
+    background-image: linear-gradient(45deg, rgb(33, 96, 197), rgb(90, 167, 255));
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.843);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    transition: transform 0.5s, background-image 0.5s;
+}
+
+.slect-buton-prefer:hover, #game-button-start:hover, .butn-decor:hover {
+    background-image: linear-gradient(45deg, rgb(90, 167, 255), rgb(33, 96, 197));
+    transform: translateZ(-50px);
+    -webkit-transform: translateZ(-50px);
+    -moz-transform: translateZ(-50px);
+    -ms-transform: translateZ(-50px);
+    -o-transform: translateZ(-50px);
+}
+
+#rsp_selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin: 15% auto;
+    width: 600px;
+    height: 100px;
+}
+
+.rsp_butn {
+    width: 100px;
+    margin: 20px;
+    transition: transform 0.5s;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Asegurarse de que la imagen también se transforme al pasar el ratón */
+.rsp_img:hover {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+#select-prefer {
+    text-align: center;
+    align-items: center;
+}
+
+#results {
+    width: 600px;
+    height: auto;
+    background-color: rgb(52, 52, 93);
+    text-align: center;
+    margin: 10% auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px 0;
+}
+
+
+
+#players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.inputplayers {
+    background-color: rgb(61, 72, 94);
+    padding: 10px;
+    margin: 10px 5px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom:  solid 2px rgb(97, 138, 214);
+    color: rgba(255, 255, 255, 0.716);
+    cursor: pointer;
+}
+
+.inputplayers:focus {
+    outline: none;
+}
+
+.inputplayers:hover {
+    
+    background-color: rgb(68, 79, 103);
+}
+
+#player1 {
+    border-top-left-radius: 10px;
+}
+
+#player2 {
+    border-top-right-radius: 10px;
+}
+
+#players-div {
+    width: 500px;
+    align-items: center;
+    position: relative;
+    left: 30.5%;
+}
+
+#game-button-start {
+    margin: 2px auto;
+    width: 415px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: 31%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+#game {
+    text-align: center;
+}
