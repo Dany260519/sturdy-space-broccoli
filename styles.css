@@ -197,7 +197,7 @@ h2 span {
 
 @media screen and (max-width: 700px) {
     .rsp_img {
-        width: 100px;
+        width: 80px;
     }
 
     #rsp_selector {
