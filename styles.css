@@ -4,6 +4,8 @@
 body {
     background: fixed rgb(42, 42, 74);
     color: aliceblue;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 p span {
