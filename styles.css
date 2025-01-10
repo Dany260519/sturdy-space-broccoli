@@ -194,3 +194,35 @@ h2 span {
 #game {
     text-align: center;
 }
+
+@media screen {
+    .rsp_img {
+        width: 100px;
+    }
+
+    #rsp_selector {
+        width: 450px;
+    }
+
+    .rsp_butn {
+        width: 100px;
+        margin: 10px;
+    }
+
+    #results {
+        width: 450px;
+    }
+
+    .inputplayers {
+        width: 100px;
+    }
+    
+    #players-div {
+        width: 400px;
+    }
+    
+    #game-button-start {
+        width: 217px;
+        left: 31.5%;
+    }
+}
